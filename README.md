@@ -10,6 +10,6 @@ First step in the process was to prepare the Tags column to extract important fe
 
 In the next step, I applied one-hot coding methodology to create a binary vector of each hotel where each element respresents the presence or absence of a specific tag. If a tag is present, its corresponding element is set to 1. Further, I calculated the similarity using the encoded tag vectors and average reviewer score using the cosine similarity formula.  Cosine similarity measures the cosine of the angle between two vectors and ranges from -1 to 1. A higher value indicates a greater similarity between the hotels. The result is an NxN matrix where N is the number of hotels and each row represents the similarity value for a hotel with all other hotels.
 
-For the final step, I created a function named new_recommended_hotels which takes the hotel name as input along with cosine_similarity matrix and returns a list of top 10 most similar hotels to the given input. 
+For the final step, I created a function named new_recommended_hotels which takes the hotel name as input along with cosine_similarity matrix and returns a list of top 10 most similar hotels to the given input hotel. 
 
 Overall, this content-based recommendation system offers a data-driven approach to suggesting hotels that are similar to the ones users have liked, enhancing the user experience in the hospitality domain.
