@@ -1,6 +1,7 @@
 # Hotel Recommendation System
 This repository is about my semester project related to the course Big Data Analytics. I programmed a recommendation system based on Hotel Reviews Dataset. 
 
+# Overview of the Steps employed in Implementation
 A content-based recommendation system suggests new items that are similar to the ones a user previously rated highly. By examining attributes such as the hotel's facilities, location setting, and overall ambiance, the recommendation engine can pinpoint properties that closely match the tastes demonstrated by the user's positive review. This content-based approach analyzes the characteristics of the items themselves, rather than considering data about other users' preferences or behavioral patterns. As a result, it is well-suited for making personalized recommendations tailored to individuals with niche interests or highly specific requirements. This approach implements a content-based recommendation system for hotels based on their tags and average reviewer score. 
 
 The dataset that I used for this project contains 515,000 customer reviews and scoring of 1493 luxury hotels across Europe. The dataset consisted of 17 columns however only 4 i.e. Hotel Name, Address, Tags and Average Reviewer were used in the implementation of the recommendation system. 
@@ -12,4 +13,3 @@ In the next step, I applied one-hot coding methodology to create a binary vector
 For the final step, I created a function named new_recommended_hotels which takes the hotel name as input along with cosine_similarity matrix and returns a list of top 10 most similar hotels to the given input. 
 
 Overall, this content-based recommendation system offers a data-driven approach to suggesting hotels that are similar to the ones users have liked, enhancing the user experience in the hospitality domain.
-
